@@ -55,6 +55,9 @@
   #hijo1 {
     background-color: red;
   }
+  #hijo1 img,#hijo2 img{
+    height: 150px;
+  } 
   #hijo2 {
     background-color: black;
   }
@@ -72,12 +75,13 @@
   }
   #hijo7 {
     
-    width: 100%;
-    height: 100px;
+    
   }
   #hijo7 img{
-    height: 100%;
+    
+    width: 100%;
   }
+ 
   
   
   .fab-list-side-top .fab-button-in-list{

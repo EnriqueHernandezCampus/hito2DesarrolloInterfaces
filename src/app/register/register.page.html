@@ -1,42 +1,51 @@
-<ion-header>
-  
-</ion-header>
+<ion-header> </ion-header>
 
 <ion-content>
   <div id="caja-logo">
     <img src="./../../assets/img/vulcano.png" />
   </div>
-
-  <div id="formulario">
-    <ion-card class="caja-input">
-      <ion-item class="separado">
-        <ion-input placeholder=" email"
-          ><ion-icon name="mail-outline"></ion-icon
-        ></ion-input>
-      </ion-item>
-    </ion-card>
-    <ion-card class="caja-input">
-      <ion-item class="separado">
-        <ion-input placeholder=" contraseña"
-          ><ion-icon name="lock-closed-outline"></ion-icon
-        ></ion-input>
-      </ion-item>
-    </ion-card>
-    <ion-card class="caja-input">
-      <ion-item class="separado">
-        <ion-input placeholder=" repetir contraseña"
-          ><ion-icon name="lock-closed-outline"></ion-icon
-        ></ion-input>
-      </ion-item>
-    </ion-card>
-  </div>
-  <ion-item class="color-politica">
-    <ion-label>Acepto la <a>política de privacidad</a></ion-label>
-    <ion-checkbox color="primary" slot="start"></ion-checkbox>
-  </ion-item>
-  <div id="boton-register">
-    <ion-button color="tertiary">Registrarse</ion-button>
-  </div>
+  <form [formGroup]="usuario">
+    <div id="formulario">
+      <ion-card class="caja-input">
+        <ion-item class="separado">
+          <ion-input formControlName="email" placeholder=" email">
+            <ion-icon name="mail-outline"></ion-icon>
+          </ion-input>
+        </ion-item>
+      </ion-card>
+      <ion-card class="caja-input">
+        <ion-item class="separado">
+          <ion-input
+            formControlName="password"
+            type="password"
+            placeholder=" contraseña"
+            ><ion-icon name="lock-closed-outline"></ion-icon
+          ></ion-input>
+        </ion-item>
+      </ion-card>
+      <ion-card class="caja-input">
+        <ion-item class="separado">
+          <ion-input placeholder=" repetir contraseña"
+            ><ion-icon name="lock-closed-outline"></ion-icon
+          ></ion-input>
+        </ion-item>
+      </ion-card>
+    </div>
+    <ion-item class="color-politica">
+      <ion-label>Acepto la <a>política de privacidad</a></ion-label>
+      <ion-checkbox color="primary" slot="start"></ion-checkbox>
+    </ion-item>
+    <div id="boton-register">
+      <ion-button
+        [disabled]="!usuario.valid"
+        (click)="signin()"
+        type="submit"
+        expand="block"
+        color="tertiary"
+        >Registrarse</ion-button
+      >
+    </div>
+  </form>
   <div class="texto">
     <p>Registrarse con:</p>
   </div>
@@ -52,6 +61,6 @@
     <p>Ya tengo cuenta</p>
   </div>
   <div id="boton-register">
-    <ion-button href="/login"color="light">Iniciar sesión</ion-button>
+    <ion-button href ="login"color="light">Iniciar sesión</ion-button>
   </div>
 </ion-content>
