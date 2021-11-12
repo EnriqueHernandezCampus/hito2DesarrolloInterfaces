@@ -1,31 +1,55 @@
-<ion-header>
- 
-</ion-header>
+<ion-header> </ion-header>
 
 <ion-content>
   <div id="caja-logo">
     <img src="./../../assets/img/vulcano.png" />
   </div>
 
-  <div id="formulario">
-    <ion-card class="caja-input">
-      <ion-item class="separado">
-        <ion-input placeholder=" email"
-          ><ion-icon name="mail-outline"></ion-icon
-        ></ion-input>
-      </ion-item>
-    </ion-card>
-    <ion-card class="caja-input">
-      <ion-item class="separado">
-        <ion-input placeholder=" contraseña"
-          ><ion-icon name="lock-closed-outline"></ion-icon
-        ></ion-input>
-      </ion-item>
-    </ion-card>
-    <a href="">He olvidado la contraseña</a>
+  <!--
+  <form [formGroup]="usuario">
+    <div id="formulario">
+      <ion-card class="caja-input">
+        <ion-item>
+          <ion-input formControlName="email" placeholder=" email"
+            ><ion-icon name="mail-outline"></ion-icon
+          ></ion-input>
+        </ion-item>
+      </ion-card>
+      <ion-card class="caja-input">
+        <ion-item class="separado">
+          <ion-input
+            formControlName="password"
+            type="password"
+            placeholder=" contraseña"
+            ><ion-icon name="lock-closed-outline"></ion-icon
+          ></ion-input>
+        </ion-item>
+      </ion-card>
+      <a href="">He olvidado la contraseña</a>
 
-    <ion-button href ="/tabs/tab1">Iniciar sesión</ion-button>
-    <p>Aún no tengo cuenta:</p>
-    <ion-button href="/register"color="light">Registrarse</ion-button>
-  </div>
+      <ion-button href="/tabs/tab1">Iniciar sesión</ion-button>
+      <p>Aún no tengo cuenta:</p>
+      <ion-button href="/register" color="light">Registrarse</ion-button>
+    </div>
+  </form>
 </ion-content>
+!-->
+<ion-list>
+  <form [formGroup]="usuario">
+  <ion-item>
+  <ion-label position="floating">Email</ion-label>
+  <ion-input formControlName="email" autocapitalize="off"></ion-input>
+  </ion-item>
+  <ion-label color="danger" *ngIf="usuario.controls.email.errors?.email && (usuario.touched || usuario.dirty)">* El email no es válido.</ion-label>
+  <ion-item>
+  <ion-label position="floating">Contraseña</ion-label>
+  <ion-input formControlName="password" type="password"></ion-input>
+  </ion-item>
+  <ion-label color="danger" *ngIf="usuario.controls.password.errors?.minlength && (usuario.touched || usuario.dirty)">*La contraseña debe tener al menos 4
+  caracteres</ion-label>
+  <div class="ion-padding">
+  <ion-button [disabled]="!usuario.valid" (click)="login()" type="submit" color="primary" expand="block">Login</ion-button>
+  <ion-button [disabled]="!usuario.valid" (click)="signin()" type="submit" color="secondary" expand="block">Dar de alta</ion-button>
+  </div>
+  </form>
+  </ion-list>
