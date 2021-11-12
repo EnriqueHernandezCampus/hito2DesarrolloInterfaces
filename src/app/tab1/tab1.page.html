@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <div id="filtro-padre">
+      <div id="filtro">
+        <img src="../../assets/img/vulcano-mini.png" />
+        <ion-buttons
+          ><ion-button
+            ><ion-icon name="person-circle-outline"></ion-icon></ion-button
+        ></ion-buttons>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div id="hijo1"><img src="../../assets/img/running.jpg" alt="" /></div>
+    <div id="hijo2"><img src="../../assets/img/ciclismo.jpg" alt="" /></div>
+    <div id="hijo3"><img src="assets/img/darta.jpg" alt="" /></div>
+    <div id="hijo4"><img src="assets/img/dune.jpg" alt="" /></div>
+    <div id="hijo5"><img src="assets/img/bj.jpg" alt="" /></div>
+    <div id="hijo6"><img src="assets/img/bp.jpg" alt="" /></div>
+  </div>
+  <div id="outlet">
+    <div id="hijo7"><img src="../../assets/img/outlet.png" /></div>
+  </div>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button href="/login"
+        ><ion-icon name="log-in-outline"></ion-icon
+      ></ion-fab-button>
+
+      <ion-fab-button><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>

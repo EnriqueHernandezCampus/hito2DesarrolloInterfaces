@@ -1,0 +1,27 @@
+#caja-logo{
+    width: 220px;
+    margin:40px auto 0 auto;
+    }
+    .caja-input{
+        height: 30px;
+        width: 62%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    #formulario{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 400px;
+        align-items: center;
+    }
+   
+    ion-content, ion-header,ion-toolbar{
+        --background:#F3C19D !important;
+    }
+    

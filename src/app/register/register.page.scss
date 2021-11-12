@@ -1,0 +1,52 @@
+#caja-logo{
+width: 220px;
+margin:40px auto 0 auto;
+}
+.caja-input{
+    height: 30px;
+    width: 62%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#formulario{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 150px;
+}
+ion-item ion-checkbox{
+    --size: 20px;
+}
+#boton-register{
+    margin: 0 auto;
+
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.texto{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+#register-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+    width: 50%;
+    margin: 0 auto;
+}
+ion-content, ion-header,ion-toolbar{
+    --background:#F3C19D !important;
+}
+
+.color-politica{
+    --background:#F3C19D !important;
+}
