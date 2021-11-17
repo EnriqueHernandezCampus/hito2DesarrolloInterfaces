@@ -1,13 +1,41 @@
-#filtro ion-buttons ion-button ion-icon{
-    size: large;
- }
- 
- #filtro {
-   margin: 0 auto;
-   width: 70%;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-  
- }
- 
+#filtro ion-buttons ion-button ion-icon {
+  size: large;
+}
+
+#filtro {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+b,
+p {
+  font-size: 11px;
+  margin: 0;
+}
+
+#container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 150px);
+  height: 450px;
+}
+#hijo1,
+#hijo2,
+#hijo3,
+#hijo4,
+#hijo5,
+#hijo6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#hijo1 img,#hijo2 img,#hijo3 img,#hijo4 img,#hijo5 img,#hijo6 img {
+  height: 110px;
+}
+
+
+
