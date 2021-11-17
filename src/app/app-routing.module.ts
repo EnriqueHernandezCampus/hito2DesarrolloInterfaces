@@ -14,6 +14,14 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'user',
+    loadChildren: () => import('./user/user.module').then( m => m.UserPageModule)
+  },
+  {
+    path: 'futbol',
+    loadChildren: () => import('./futbol/futbol.module').then( m => m.FutbolPageModule)
+  },
  
 ];
 @NgModule({

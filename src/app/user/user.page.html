@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <div id="filtro-padre">
+      <div id="filtro">
+        <ion-buttons
+          ><ion-back-button defaultHref="/tabs/tab1"></ion-back-button
+        ></ion-buttons>
+        <img src="../../assets/img/vulcano-mini.png" />
+        <ion-buttons
+          ><ion-button routerLink="/user" routerDirection="forward"
+            ><ion-icon
+              size="large"
+              name="person-circle-outline"
+            ></ion-icon></ion-button
+        ></ion-buttons>
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="primera-caja">
+    <img src="../../assets/img/imagenperfi.jpg" />
+    <ion-button color="light">Editar perfil</ion-button>
+  </div>
+  <div id="segunda-caja">
+    <ion-icon name="clipboard-outline"></ion-icon>
+
+    <ion-icon name="settings-outline"></ion-icon>
+  </div>
+  <p>pedidos configuración</p>
+  <div id="tercera-caja">
+    <ion-label>
+      <ion-icon name="star-outline"></ion-icon>Valoraciones:5</ion-label
+    >
+    <ion-label>
+      <ion-icon name="chatbubble-ellipses-outline"></ion-icon
+      >Comentarios:3</ion-label
+    ><ion-label>
+      <ion-icon name="people-outline"></ion-icon
+      >Seguidores:1</ion-label
+    >
+  </div>
+</ion-content>
