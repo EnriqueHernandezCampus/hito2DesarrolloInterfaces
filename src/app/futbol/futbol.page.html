@@ -1,19 +1,17 @@
 <ion-header>
   <ion-toolbar>
-    <div id="filtro-padre">
-      <div id="filtro">
-        <ion-buttons
-          ><ion-back-button defaultHref="/tabs/tab1"></ion-back-button
-        ></ion-buttons>
-        <img src="../../assets/img/vulcano-mini.png" />
-        <ion-buttons
-          ><ion-button routerLink="/user" routerDirection="forward"
-            ><ion-icon
-              size="large"
-              name="person-circle-outline"
-            ></ion-icon></ion-button
-        ></ion-buttons>
-      </div>
+    <div id="filtro">
+      <ion-buttons
+        ><ion-back-button defaultHref="/tabs/tab1"></ion-back-button
+      ></ion-buttons>
+      <img src="../../assets/img/vulcano-mini.png" />
+      <ion-buttons slot="end"
+        ><ion-button routerLink="/user" routerDirection="forward"
+          ><ion-icon
+            size="large"
+            name="person-circle-outline"
+          ></ion-icon></ion-button
+      ></ion-buttons>
     </div>
   </ion-toolbar>
 </ion-header>
@@ -21,30 +19,80 @@
 <ion-content>
   <div id="container">
     <div id="hijo1">
-      <img src="../../assets/img/bota1.png" />
-      <p class ="ion-text-center">Nike Tiempo 7 FG/AG Negro/Naranja</p>
+      <a routerLink = "/tabs/tabde"routerDirection="forward"href=""><img src="../../assets/img/bota1.png" /></a>
+      <p class="ion-text-center">Nike Tiempo 7 FG/AG Negro/Naranja</p>
       <b>121,50€</b>
     </div>
     <div id="hijo2">
-      <img src="../../assets/img/bota1.png" />
-      <p class ="ion-text-center">Nike Tiempo 7 FG/AG Negro/Naranja</p>
-      <b>121,50€</b>
+      <img src="../../assets/img/bota2.png" />
+      <p class="ion-text-center">Nike Tiempo 7 FG/AG Blanco/Azul</p>
+      <b>119,50€</b>
     </div>
     <div id="hijo3">
-      <img src="../../assets/img/bota1.png" />
-      <p class ="ion-text-center">Nike Tiempo 7 FG/AG Negro/Naranja</p>
-      <b>121,50€</b>
+      <img src="../../assets/img/bota3.png" />
+      <p class="ion-text-center">Nike Mercurial Superfly 8 SG Naranja/Negro</p>
+      <b>114,90€</b>
     </div>
     <div id="hijo4">
-      <img src="../../assets/img/bota1.png" />
-      <p class ="ion-text-center">Nike Tiempo 7 FG/AG Negro/Naranja</p>
+      <img src="../../assets/img/bota4.png" />
+      <p class="ion-text-center">Puma King Top FG/AG Negro/Blanco</p>
+      <b>117,50€</b>
+    </div>
+    <div id="hijo5">
+      <img src="../../assets/img/bota5.png" />
+      <p class="ion-text-center">Adidas Copa Mundial SG Negro/Naranja</p>
+      <b>99,50€</b>
+    </div>
+    <div id="hijo6">
+      <img src="../../assets/img/bota6.png" />
+      <p class="ion-text-center">Nike Mercurial Superfly 8 FG/AG Blanco/Azul</p>
+      <b>191,50€</b>
+    </div>
+    <div id="hijo7">
+      <img src="../../assets/img/bota7.png" />
+      <p class="ion-text-center">Nike Mecurial 6 FG/AG Azul/Amaillo</p>
+      <b>89,50€</b>
+    </div>
+    <div id="hijo8">
+      <img src="../../assets/img/bota8.png" />
+      <p class="ion-text-center">Adidas X 16.4 FXG FG/AG Naranja/Gris</p>
+      <b>50€</b>
+    </div>
+    <div id="hijo9">
+      <img src="../../assets/img/bota9.png" />
+      <p class="ion-text-center">Nike Hypervenom Phelon 3 AGPRO Rojo/Negro</p>
+      <b>110,50€</b>
+    </div>
+    <div id="hijo10">
+      <img src="../../assets/img/bota10.png" />
+      <p class="ion-text-center">Nike Mercurial Superfly 8 Elite CR7 FG</p>
+      <b>238,50€</b>
+    </div>
+    <div id="hijo11">
+      <img src="../../assets/img/bota11.png" />
+      <p class="ion-text-center">Nike Tiempo 7 FG/AG Negro/Naranja</p>
       <b>121,50€</b>
     </div>
-    <div id="hijo5"><img src="../../assets/img/bota1.png" />
-      <p class ="ion-text-center">Nike Tiempo 7 FG/AG Negro/Naranja</p>
-      <b>121,50€</b></div>
-    <div id="hijo6"><img src="../../assets/img/bota1.png" />
-      <p class ="ion-text-center">Nike Tiempo 7 FG/AG Negro/Naranja</p>
-      <b>121,50€</b></div>
+    <div id="hijo12">
+      <img src="../../assets/img/bota12.png" />
+      <p class="ion-text-center">Nike Tiempo 7 FG/AG Negro/Naranja</p>
+      <b>121,50€</b>
+    </div>
+  </div>
+  <div id="chips">
+    <ion-chip>
+      <ion-icon name="funnel"></ion-icon
+      ><ion-label class="ion-text-center">Filtros</ion-label>
+    </ion-chip>
+    <ion-chip>
+      <ion-label>Ordenar</ion-label>
+    </ion-chip>
+    <ion-chip>
+      <ion-label>Categorias</ion-label>
+    </ion-chip>
   </div>
 </ion-content>
+<!-- ion segment group
+  ion-modal
+  ion range
+ion-toast -->

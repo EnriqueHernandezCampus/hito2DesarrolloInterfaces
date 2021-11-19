@@ -1,0 +1,23 @@
+#filtro ion-buttons ion-button ion-icon {
+    size: large;
+  }
+  
+  #filtro {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #filtro img {
+    padding: 0 15%;
+  }
+  .subdescripcion{
+      font-size: x-small;
+  }
+  .descripcion{
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+  }

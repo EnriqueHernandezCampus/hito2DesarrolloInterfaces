@@ -24,6 +24,16 @@ const routes: Routes = [
         loadChildren: () => import('../tab4/tab4.module').then(m => m.Tab4PageModule)
       },
       {
+        path: 'futbol',
+        loadChildren: () => import('../futbol/futbol.module').then( m => m.FutbolPageModule)
+      },{
+        path: 'user',
+        loadChildren: () => import('../user/user.module').then( m => m.UserPageModule)
+      },{
+        path: 'tabde',
+        loadChildren: () => import('../tabde/tabde.module').then( m => m.TabdePageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'

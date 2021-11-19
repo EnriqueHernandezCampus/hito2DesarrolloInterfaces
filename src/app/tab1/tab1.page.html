@@ -1,13 +1,14 @@
 <ion-header>
   <ion-toolbar>
-    <div id="filtro-padre">
-      <div id="filtro">
-        <img src="../../assets/img/vulcano-mini.png" />
-        <ion-buttons
-          ><ion-button routerLink="/user" routerDirection="forward"
-            ><ion-icon size ="large"name="person-circle-outline"></ion-icon></ion-button
-        ></ion-buttons>
-      </div>
+    <div id="filtro">
+      <img src="../../assets/img/vulcano-mini.png" />
+      <ion-buttons
+        ><ion-button routerLink="/tabs/user" routerDirection="forward"
+          ><ion-icon
+            size="large"
+            name="person-circle-outline"
+          ></ion-icon></ion-button
+      ></ion-buttons>
     </div>
   </ion-toolbar>
 </ion-header>
@@ -17,7 +18,11 @@
     <div id="hijo1"><img src="../../assets/img/running.jpg" alt="" /></div>
     <div id="hijo2"><img src="../../assets/img/ciclismo.jpg" alt="" /></div>
     <div id="hijo3"><img src="assets/img/darta.jpg" alt="" /></div>
-    <div id="hijo4"><a routerLink="/futbol" routerDirection="forward"><img src="../../assets/img/futbol.jpg" alt="" /></a></div>
+    <div id="hijo4">
+      <a routerLink="/tabs/futbol" routerDirection="forward"
+        ><img src="../../assets/img/futbol.jpg" alt=""
+      /></a>
+    </div>
     <div id="hijo5"><img src="assets/img/bj.jpg" alt="" /></div>
     <div id="hijo6"><img src="assets/img/bp.jpg" alt="" /></div>
   </div>
