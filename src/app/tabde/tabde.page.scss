@@ -1,23 +1,32 @@
 #filtro ion-buttons ion-button ion-icon {
-    size: large;
-  }
-  
-  #filtro {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    width: 60%;
-    justify-content: space-around;
-    align-items: center;
-  }
-  #filtro img {
-    padding: 0 15%;
-  }
-  .subdescripcion{
-      font-size: x-small;
-  }
-  .descripcion{
-      display: block;
-      width: 80%;
-      margin: 0 auto;
-  }
+  size: large;
+}
+
+#filtro {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+}
+#filtro img {
+  padding: 0 15%;
+}
+.subdescripcion {
+  font-size: x-small;
+  margin-bottom: 0;
+}
+.descripcion {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+#estrellas {
+  font-size: small;
+}
+
+ion-select{
+  font-size: xx-small;
+
+}
