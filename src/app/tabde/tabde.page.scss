@@ -1,7 +1,9 @@
 #filtro ion-buttons ion-button ion-icon {
   size: large;
 }
-
+ion-slides{
+  height: 200px;
+}
 #filtro {
   display: flex;
   flex-direction: row;
@@ -28,5 +30,13 @@
 
 ion-select{
   font-size: xx-small;
+
+}
+ion-button{
+  width: 100%;
+}
+#botones-seguidos{
+  display: flex;
+  flex-direction: row;
 
 }

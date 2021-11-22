@@ -43,15 +43,11 @@
         <ion-icon color="warning" name="star"></ion-icon>
         <ion-icon color="warning" name="star"></ion-icon>
         <ion-icon color="warning" name="star"></ion-icon>
-        <span class="subdescripcion">10 opiniones | Déjanos la tuya</span> 
+        <span class="subdescripcion"> 10 opiniones</span> 
       </p>
       <ion-item>
         <ion-label>Tallas</ion-label>
-        <ion-select
-          interface="action-sheet"
-         
-          cancelText="Cancelar"
-        >
+        <ion-select interface="action-sheet" cancelText="Cancelar">
           <ion-select-option value="38">38</ion-select-option>
           <ion-select-option value="39">39</ion-select-option>
           <ion-select-option value="40">40</ion-select-option>
@@ -63,7 +59,13 @@
           <ion-select-option value="43.5">43 1/2</ion-select-option>
         </ion-select>
       </ion-item>
-      <ion-button color ="danger" ><ion-icon name="bag-add-outline"></ion-icon>Añadir al carrito</ion-button>
+      <ion-button color="danger"
+        ><ion-icon name="bag-add-outline"></ion-icon>Añadir al
+        carrito</ion-button>
+      <div id="botones-seguidos">
+        <ion-button color = "light" ><ion-icon name="heart"></ion-icon>Añadir afavoritos</ion-button>
+        <ion-button color = "light" ><ion-icon name="share-social"></ion-icon></ion-button>
+      </div>
     </div>
   </div>
 </ion-content>
