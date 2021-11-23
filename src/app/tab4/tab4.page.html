@@ -2,11 +2,16 @@
   <ion-toolbar>
     <div id="filtro-padre">
       <div id="filtro">
-        <ion-buttons><ion-back-button   defaultHref="/tabs/tab1" ></ion-back-button></ion-buttons>
+        <ion-buttons
+          ><ion-back-button defaultHref="/tabs/tab1"></ion-back-button
+        ></ion-buttons>
         <img src="../../assets/img/vulcano-mini.png" />
         <ion-buttons
-          ><ion-button routerLink="/user" routerDirection="forward"
-            ><ion-icon size ="large"name="person-circle-outline"></ion-icon></ion-button
+          ><ion-button routerLink="/tabs/user" routerDirection="forward"
+            ><ion-icon
+              size="large"
+              name="person-circle-outline"
+            ></ion-icon></ion-button
         ></ion-buttons>
       </div>
     </div>
@@ -15,4 +20,51 @@
 
 <ion-content>
 
+  <div id="producto-container">
+    <div id="imagen-producto">
+      <a href="#"><ion-icon name="trash-outline"></ion-icon></a>
+      <img src="../../assets/img/bota12.png" />
+    </div>
+    <div id="texto-producto">
+      <p>Botas de fútbol Nike Mercurial FG</p>
+      <p class="subtexto">Talla 42EU - 8.5UK</p>
+      <p class="entrega">Entrega estimada Lunes 29 Noviembre 2021 </p>
+    </div>
+    <div id="cantidad-precio">
+      <span class="box">1</span>
+      <p>159,99€</p>
+    </div>
+  </div>
+  <div class="hr"></div>
+  <div id="producto-container">
+    <div id="imagen-producto">
+      <a href="#"><ion-icon name="trash-outline"></ion-icon></a>
+      <img class="camiseta" src="../../assets/img/camiseta.png" />
+    </div>
+    <div id="texto-producto">
+      <p>Camiseta de futbol Elche primera 21/22</p>
+      <p class="subtexto">Talla: M</p>
+      <p class="entrega">Entrega estimada Lunes 29 Noviembre 2021 </p>
+    </div>
+    <div id="cantidad-precio">
+      <span class="box">1</span>
+      <p>67,50€</p>
+    </div>
+  </div>
+  <div class="hr"></div>
+  <div id="total-padre">
+  <div class="total">
+    <b>Total compra:189€</b>
+  </div>
+</div>
+<div id="descuento-padre">
+  <div id="descuento">
+    <ion-input placeholder="Código de descuento"> </ion-input>
+    <ion-button color ="light">Aplicar</ion-button>
+  </div>
+</div>
+<div id="tramitar-padre">
+  <ion-button  routerLink="/tabs/futbol" routerDirection ="backward"color="light" >Continuar comprando</ion-button>
+  <ion-button color ="warning"><ion-icon name="cart"></ion-icon>Tramitar Pedido</ion-button>
+</div>
 </ion-content>

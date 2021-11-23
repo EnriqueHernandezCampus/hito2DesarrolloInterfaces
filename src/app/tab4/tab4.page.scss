@@ -1,13 +1,88 @@
-#filtro ion-buttons ion-button ion-icon{
-    size: large;
- }
- 
- #filtro {
-   margin: 0 auto;
-   width: 70%;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-  
- }
- 
+#filtro ion-buttons ion-button ion-icon {
+  size: large;
+}
+
+#filtro {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 60%;
+  justify-content: space-around;
+  align-items: center;
+}
+#filtro img {
+  padding: 0 15%;
+}
+#producto-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+#imagen-producto img {
+  width: 70%;
+}
+#imagen-producto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#texto-producto {
+  font-size: xx-small;
+}
+#cantidad-precio {
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.entrega {
+  color: rgb(0, 167, 0);
+}
+.subtexto {
+  color: grey;
+}
+.box {
+  border: 1px solid grey;
+  padding: 5px;
+}
+.hr {
+  border-bottom: 1px solid #ccc;
+  margin: 10px 0;
+  width: 100%;
+}
+.camiseta {
+  width: 20%;
+}
+#total-padre {
+  display: flex;
+  justify-content: end;
+}
+.total {
+  border: 1px solid grey;
+  width: 55%;
+  padding: 5%;
+  font-size: small;
+}
+#descuento-padre {
+  float: right;
+}
+#descuento {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: fit-content;
+  font-size: small;
+}
+ion-button {
+  font-size: small;
+}
+#tramitar-padre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+}

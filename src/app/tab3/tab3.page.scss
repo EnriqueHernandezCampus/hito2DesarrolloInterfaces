@@ -1,0 +1,31 @@
+#filtro ion-buttons ion-button ion-icon {
+    size: large;
+  }
+  
+  #filtro {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #filtro img {
+    padding: 0 15%;
+  }
+  #elemento{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+  }
+  #elemento-texto{
+      display: flex;
+      flex-direction: column;
+  }
+  #elemento img{ 
+      width: 50%;
+  }
+  #basura ion-icon:hover{
+    color: red;
+  }

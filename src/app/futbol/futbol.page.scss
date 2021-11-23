@@ -26,57 +26,29 @@ p {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(6, 150px);
   height: 950px;
-
 }
-#hijo1,
-#hijo2,
-#hijo3,
-#hijo4,
-#hijo5,
-#hijo6,
-#hijo7,
-#hijo8,
-#hijo9,
-#hijo10,
-#hijo11,
-#hijo12,
-#hijo13,
-#hijo14 {
+.hijos {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-#hijo1 img,
-#hijo2 img,
-#hijo3 img,
-#hijo4 img,
-#hijo5 img,
-#hijo6 img,
-#hijo7 img,
-#hijo8 img,
-#hijo9 img,
-#hijo10 img,
-#hijo11 img,
-#hijo12 img,
-#hijo13 img,
-#hijo14 img {
+.hijos img {
   height: 110px;
 }
-#chips{
+#chips {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
-  position:fixed;
-  top: 94%;
-  
+  position: fixed;
+  top: 92%;
 }
 ion-chip {
-  --background: #c3cfd944;
+  --background: #c3cfd969;
 }
-ion-chip:hover{
-  --background: #c3cfd9;
+ion-chip:hover {
+  --background: #f3c19d;
 }
 ion-chip ion-label {
   text-overflow: unset;
@@ -84,6 +56,6 @@ ion-chip ion-label {
   font-size: small;
   align-items: center;
 }
-ion-chip ion-icon{
+ion-chip ion-icon {
   font-size: small;
 }
