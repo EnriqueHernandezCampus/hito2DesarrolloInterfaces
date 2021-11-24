@@ -1,17 +1,15 @@
-#filtro ion-buttons ion-button ion-icon {
-  size: large;
+#filtro-padre {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 #filtro {
   display: flex;
   flex-direction: row;
-  margin: auto;
-  width: 60%;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-}
-#filtro img {
-  padding: 0 15%;
+  width: 100%;
 }
 #producto-container {
   display: flex;

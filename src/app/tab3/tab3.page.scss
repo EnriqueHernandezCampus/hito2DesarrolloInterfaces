@@ -1,56 +1,58 @@
-#filtro ion-buttons ion-button ion-icon {
-    size: large;
-  }
-  
-  #filtro {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    width: 60%;
-    justify-content: space-around;
-    align-items: center;
-  }
-  #filtro img {
-    padding: 0 15%;
-  }
-  #elemento{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-  }
-  #elemento-texto{
-      display: flex;
-      flex-direction: column;
-  }
-  #elemento img{ 
-      width: 50%;
-  }
-  #basura ion-icon:hover{
-    color: red;
-  }
-  .clicker {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-    outline: none;
-    cursor: pointer;
-    color:#FFF;
-    display:block;
-  }
-  
-  .hiddendiv {
-    display: none;
-    height: 200px;
-    background-color: green;
-  }
-  
-  .clicker:focus+.hiddendiv {
-    display: block;
-  }
-  .hidden{
-    margin-left:-99999px;
-  }
-  input#cmn-toggle-7:checked + label + div{
-   display:block;
-  }
+#filtro-padre {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#filtro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#elemento {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#elemento-texto {
+  display: flex;
+  flex-direction: column;
+}
+#elemento img {
+  width: 50%;
+}
+#basura ion-icon:hover {
+  color: red;
+}
+#elemento p {
+  font-size: small;
+}
+// .clicker {
+//   width: 100px;
+//   height: 100px;
+//   background-color: blue;
+//   outline: none;
+//   cursor: pointer;
+//   color:#FFF;
+//   display:block;
+// }
+
+// .hiddendiv {
+//   display: none;
+//   height: 200px;
+//   background-color: green;
+// }
+
+// .clicker:focus+.hiddendiv {
+//   display: block;
+// }
+// .hidden{
+//   margin-left:-99999px;
+// }
+// input#cmn-toggle-7:checked + label + div{
+//  display:block;
+// }

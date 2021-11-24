@@ -4,16 +4,28 @@
   justify-content: space-between;
   width: 100%;
 }
-#filtro ion-buttons ion-button ion-icon {
-  size: large;
-}
-
-#filtro {
-  margin: 0 auto;
-  width: 70%;
+#filtro-padre {
+  width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: end;
 }
+#filtro{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 78%;
+}
+ion-slides{
+  height: 80px;
+}
+#outlet{
+  width: 100%;
+}
+ion-slide img{
+  width: 100%;
+}
+
 
 .vista {
   display: flex;
@@ -89,25 +101,25 @@ ion-fab-button {
   width: 50%;
 }
 
-.clicker:focus + .hiddendiv {
-  display: block;
-}
-.hidden {
-  display: none;
-}
-input#cmn-toggle-7:checked + label + div {
-  display: block;
-}
-.hiddendiv2 {
-  display: none;
-  background-color: white;
-  position: absolute;
-  top: 229px;
-  width: 50%;
-}
-.clicker:focus + .hiddendiv2 {
-  display: block;
-}
-input#cmn-toggle-8:checked + label + div {
-  display: block;
-}
+// .clicker:focus + .hiddendiv {
+//   display: block;
+// }
+// .hidden {
+//   display: none;
+// }
+// input#cmn-toggle-7:checked + label + div {
+//   display: block;
+// }
+// .hiddendiv2 {
+//   display: none;
+//   background-color: white;
+//   position: absolute;
+//   top: 229px;
+//   width: 50%;
+// }
+// .clicker:focus + .hiddendiv2 {
+//   display: block;
+// }
+// input#cmn-toggle-8:checked + label + div {
+//   display: block;
+// }

@@ -1,7 +1,8 @@
 <ion-header>
   <ion-toolbar>
-    <div id="filtro">
-      <img src="../../assets/img/vulcano-mini.png" />
+    <div id="filtro-padre">
+      <div id ="filtro">
+      <img src="../../assets/img/vulcano-mini2.jpg" />
       <ion-buttons
         ><ion-button routerLink="/tabs/user" routerDirection="forward"
           ><ion-icon
@@ -10,59 +11,78 @@
           ></ion-icon></ion-button
       ></ion-buttons>
     </div>
+    </div>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-slides id="outlet"pager="true">
+  
+      <ion-slide id="hijo7">
+       <img src="../../assets/img/outlet.png" />
+      </ion-slide>
+      <ion-slide>
+        <img src="../../assets/img/bota12b.png" alt="" />
+      </ion-slide>
+      <ion-slide>
+        <img src="../../assets/img/bota12c.png" alt="" />
+      </ion-slide>
+      <ion-slide>
+        <img src="../../assets/img/bota12d.png" alt="" />
+      </ion-slide>
+    
+  </ion-slides>
   <div id="container">
     <div class="hijos">
-      <input id="cmn-toggle-7" class="hidden" type="checkbox" />
-      <label for="cmn-toggle-7" class="clicker" tabindex="1">
-        <img src="../../assets/img/running.jpg" alt="running"
-      /></label>
-      <div class="hiddendiv">
+      <!-- <input id="cmn-toggle-7" class="hidden" type="checkbox" />
+      <label for="cmn-toggle-7" class="clicker" tabindex="1"> -->
+      <img src="../../assets/img/running.jpg" alt="running" />
+      <!--  </label> -->
+      <!-- <div class="hiddendiv">
         <p>Zapatillas de running</p>
         <p>Equipación running</p>
         <p>Accesosrios running</p>
         <p>Electrónica running</p>
-      </div>
+      </div> -->
     </div>
     <div class="hijos">
-      <input id="cmn-toggle-7" class="hidden" type="checkbox" />
-      <label for="cmn-toggle-7" class="clicker" tabindex="1">
-        <img src="../../assets/img/ciclismo.jpg" alt="running"
-      /></label>
-      <div class="hiddendiv">
+      <!--  <input id="cmn-toggle-7" class="hidden" type="checkbox" />
+      <label for="cmn-toggle-7" class="clicker" tabindex="1"> -->
+      <img src="../../assets/img/ciclismo.jpg" alt="running" />
+      <!-- </label> -->
+      <!-- <div class="hiddendiv">
         <p>Bicicletas</p>
         <p>Zapatillas ciclismo</p>
         <p>Equipación ciclismo</p>
         <p>Accesorios ciclismo</p>
-      </div>
+      </div> -->
     </div>
     <div class="hijos">
-      <input id="cmn-toggle-7" class="hidden" type="checkbox" />
-      <label for="cmn-toggle-7" class="clicker" tabindex="1">
-        <img src="../../assets/img/outdoor2.jpg" alt="running"
-      /></label>
-      <div class="hiddendiv2">
+      <!-- <input id="cmn-toggle-7" class="hidden" type="checkbox" />
+      <label for="cmn-toggle-7" class="clicker" tabindex="1"> -->
+      <img src="../../assets/img/outdoor2.jpg" alt="running" />
+      <!-- </label> -->
+      <!-- <div class="hiddendiv2">
         <p>Calzado de montaña</p>
         <p>Equipación Outdoor</p>
         <p>Material Outdoor</p>
         <p>Escalada</p>
-      </div>
+      </div> -->
     </div>
 
     <div class="hijos">
-      <input id="cmn-toggle-8" class="hidden" type="checkbox" />
-      <label for="cmn-toggle-8" class="clicker" tabindex="1">
-        <img src="../../assets/img/futbol.jpg" alt="running"
-      /></label>
-      <div class="hiddendiv2">
-        <p><a routerLink ="/tabs/futbol">Botas de fútbol</a></p>
+      <!-- <input id="cmn-toggle-8" class="hidden" type="checkbox" />
+      <label for="cmn-toggle-8" class="clicker" tabindex="1"> -->
+      <a routerLink="/tabs/futbol"
+        ><img src="../../assets/img/futbol.jpg" alt="futbol"
+      /></a>
+      <!-- </label> -->
+      <!-- <div class="hiddendiv2">
+        <p><a routerLink="/tabs/futbol">Botas de fútbol</a></p>
         <p>Camisetas de fútbol</p>
         <p>Material Outdoor</p>
         <p>Escalada</p>
-      </div>
+      </div> -->
     </div>
 
     <div class="hijos"><img src="../../assets/img/natacion.jpg" alt="" /></div>
@@ -70,10 +90,7 @@
       <img src="../../assets/img/lifestyle2.jpg" alt="Lifestyle" />
     </div>
   </div>
-  <div id="outlet">
-    <div id="hijo7"><img src="../../assets/img/outlet.png" /></div>
-  </div>
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <!-- <ion-fab vertical="bottom" horizontal="end" slot="fixed">
     <ion-fab-button>
       <ion-icon name="add-outline"></ion-icon>
     </ion-fab-button>
@@ -84,5 +101,5 @@
 
       <ion-fab-button><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
     </ion-fab-list>
-  </ion-fab>
+  </ion-fab> -->
 </ion-content>
