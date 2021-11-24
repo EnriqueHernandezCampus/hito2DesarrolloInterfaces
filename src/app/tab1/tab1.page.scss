@@ -1,92 +1,113 @@
 .derecha {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-  }
-  #filtro ion-buttons ion-button ion-icon{
-     size: large;
-  }
-  
-  #filtro {
-    margin: 0 auto;
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-  }
- 
-  
-  .vista {
-    display: flex;
-    justify-content: flex-end;
-    background-color: rgb(5, 33, 126)!important;
-    width: 50%;
-  }
-  .vista-hijo{
-      display: flex;
-      width: 30%;
-      justify-content: space-between;
-      border-left-style: solid;
-      border-width: 1px;
-      border-left-color:rgb(184, 184, 184);
-  }
-  
-  #filtro ion-label {
-    color: white;
-  }
-  ion-tab-bar {
-    --background: rgb(5, 33, 126)!important;
-    height: 30px;
-    --color: white;
-  }
-  #container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 150px);
-    height: 450px;
-  }
-  #hijo1 {
-    background-color: red;
-  }
-  #hijo1 img,#hijo2 img, #hijo4 img{ 
-    height: 150px;
-  } 
-  #hijo2 {
-    background-color: black;
-  }
-  #hijo3 {
-    background-color: floralwhite;
-  }
-  #hijo4 {
-    background-color: green;
-  }
-  #hijo5 {
-    background-color: aqua;
-  }
-  #hijo6 {
-    background-color: yellow;
-  }
-  
-  #hijo7 img{
-    
-    width: 100%;
-  }
- 
-  
-  
-  .fab-list-side-top .fab-button-in-list{
-      --background:  #050505 !important;
-      --color:  rgb(236, 245, 241) !important;
-      --background-focused: var(--background-activated);
-      --background-hover: #050505 !important;
-  }
-  ion-fab-button{
-      --background:  #050505 !important;
-      --color:  rgb(236, 245, 241) !important;
-      --background-focused: var(--background-activated);
-      --background-hover: #050505 !important;
-  }
-  .slider{
-      margin: 0 !important;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+#filtro ion-buttons ion-button ion-icon {
+  size: large;
+}
+
+#filtro {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+}
+
+.vista {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(5, 33, 126) !important;
+  width: 50%;
+}
+.vista-hijo {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  border-left-style: solid;
+  border-width: 1px;
+  border-left-color: rgb(184, 184, 184);
+}
+
+#filtro ion-label {
+  color: white;
+}
+ion-tab-bar {
+  --background: rgb(5, 33, 126) !important;
+  height: 30px;
+  --color: white;
+}
+#container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 150px);
+  height: 450px;
+}
+
+.hijos img {
+  height: 150px;
+  width: 100%;
+}
+.hijos label img {
+  height: 150px;
+  width: 100%;
+}
+#hijo7 img {
+  width: 100%;
+}
+
+.fab-list-side-top .fab-button-in-list {
+  --background: #050505 !important;
+  --color: rgb(236, 245, 241) !important;
+  --background-focused: var(--background-activated);
+  --background-hover: #050505 !important;
+}
+ion-fab-button {
+  --background: #050505 !important;
+  --color: rgb(236, 245, 241) !important;
+  --background-focused: var(--background-activated);
+  --background-hover: #050505 !important;
+}
+.slider {
+  margin: 0 !important;
+}
+.clicker {
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  display: block;
+}
+
+.hiddendiv {
+  display: none;
+  background-color: white;
+  position: absolute;
+  top: 76px;
+  width: 50%;
+}
+
+.clicker:focus + .hiddendiv {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+input#cmn-toggle-7:checked + label + div {
+  display: block;
+}
+.hiddendiv2 {
+  display: none;
+  background-color: white;
+  position: absolute;
+  top: 229px;
+  width: 50%;
+}
+.clicker:focus + .hiddendiv2 {
+  display: block;
+}
+input#cmn-toggle-8:checked + label + div {
+  display: block;
+}

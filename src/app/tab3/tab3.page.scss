@@ -29,3 +29,28 @@
   #basura ion-icon:hover{
     color: red;
   }
+  .clicker {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    outline: none;
+    cursor: pointer;
+    color:#FFF;
+    display:block;
+  }
+  
+  .hiddendiv {
+    display: none;
+    height: 200px;
+    background-color: green;
+  }
+  
+  .clicker:focus+.hiddendiv {
+    display: block;
+  }
+  .hidden{
+    margin-left:-99999px;
+  }
+  input#cmn-toggle-7:checked + label + div{
+   display:block;
+  }
