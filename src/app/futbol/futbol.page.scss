@@ -24,17 +24,15 @@ p {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(6, 150px);
-  height: 950px;
+  grid-template-rows: repeat(6, 200px);
+  height: 1250px;
 }
-.hijos {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.hijos img {
+
+ion-card img {
   height: 110px;
+}
+ion-chip {
+  --background: #c3cfd969;
 }
 #chips {
   display: flex;
@@ -44,10 +42,9 @@ p {
   position: fixed;
   top: 92%;
 }
-ion-chip {
-  --background: #c3cfd969;
-}
+
 ion-chip:hover {
+  font-size: x-large;
   --background: #f3c19d;
 }
 ion-chip ion-label {
@@ -58,4 +55,30 @@ ion-chip ion-label {
 }
 ion-chip ion-icon {
   font-size: small;
+}
+ion-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin:12px 5px;
+}
+ion-card-content p + b {
+  font-size: medium;
+  padding: 0;
+}
+ion-card img {
+  padding: 5px;
+}
+.card-content-ios,
+.card-content-md {
+  padding: 5%;
+}
+ion-card:hover{
+  --background:#f3c19dab;
+}
+ion-card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
