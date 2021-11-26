@@ -1,0 +1,36 @@
+ion-title{
+    padding:0 ;
+}
+ion-label{
+    width: 100%;
+    font-size: small;
+}
+ion-item, ion-input{
+   font-size: small;
+
+}
+ion-card-title{
+    font-size: x-large;
+}
+.entrada {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#politica ion-card-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:stretch;
+  
+    
+}
+#politica ion-card-content ion-label{
+    font-size: xx-small;
+    padding-left:15px;
+}
+ion-button{
+width: 90%;
+margin: 5%;
+}

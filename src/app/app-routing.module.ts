@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'tabde',
     loadChildren: () => import('./tabde/tabde.module').then( m => m.TabdePageModule)
   },
+  {
+    path: 'pago',
+    loadChildren: () => import('./pago/pago.module').then( m => m.PagoPageModule)
+  },
   
 
  
