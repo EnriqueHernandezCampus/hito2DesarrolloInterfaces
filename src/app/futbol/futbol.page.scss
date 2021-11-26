@@ -13,8 +13,7 @@
 #filtro img {
   padding: 0 15%;
 }
-
-b,
+#naranja b,
 p {
   font-size: 11px;
   margin: 0;
@@ -81,4 +80,27 @@ ion-card-content{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#naranja{
+ color: var(--ion-color-primary);
+ font-weight: bold;
+}
+.precio-corazon img{
+  height:15px;
+  width: 25px;
+  padding:0;
+}
+.puma img{
+  width: 20px;
+ height: 15px;
+}
+.precio-corazon{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.precio-corazon ion-icon:hover{
+color: red;
 }
