@@ -22,6 +22,10 @@ const routes: Routes = [
     path: 'pago',
     loadChildren: () => import('./pago/pago.module').then( m => m.PagoPageModule)
   },
+  {
+    path: 'confirmado',
+    loadChildren: () => import('./confirmado/confirmado.module').then( m => m.ConfirmadoPageModule)
+  },
   
 
  

@@ -12,11 +12,25 @@ ion-item, ion-input{
 ion-card-title{
     font-size: x-large;
 }
+#entrada-padre{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+
+}
+#entrada-padre2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 60%;
+    float: right;
+}
 .entrada {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+   
 }
 #politica ion-card-content{
     display: flex;
@@ -40,4 +54,14 @@ ion-item{
     flex-direction: row;
     justify-content:space-between ;
     width: 100%;
+}
+#tiempo p{
+    font-family: 'FiraSans-M';
+}
+#pagar {
+    font-family: 'FiraSans-M';
+    color: var(--ion-color-success);
+}  
+#envioPago p {
+    font-weight: bold;
 }

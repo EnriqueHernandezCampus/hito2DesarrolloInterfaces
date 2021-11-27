@@ -1,6 +1,17 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
+
+
+
+@font-face {
+  font-family: 'FiraSans-M';
+  src: url('../assets/fonts/FiraSans-Medium.ttf');
+}
+@font-face {
+  font-family: 'FiraSans-SB';
+  src: url('../assets/fonts/FiraSans-SemiBold.ttf');
+}
 /** Ionic CSS Variables **/
 :root {
   /** primary **/

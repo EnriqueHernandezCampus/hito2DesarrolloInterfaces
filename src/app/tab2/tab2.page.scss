@@ -7,8 +7,12 @@
     display: block;
     margin: 0 auto;
     width: 90%;
+    font-family: 'FiraSans-SB';
 }
 a{
     color:var(--color);
     text-decoration: none;
+}
+ion-label{
+    --font-family: 'FiraSans-SB';
 }
