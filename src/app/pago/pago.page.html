@@ -1,5 +1,6 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start"><ion-back-button defaultHref="/tabs/tab4"></ion-back-button></ion-buttons>
     <ion-title>Tramitar pedido</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -14,8 +15,17 @@
       <ion-radio-group>
         <ion-item>
           <ion-radio checked> </ion-radio>
-          <ion-label>Enviar a dirección</ion-label>
+          <ion-label>Enviar a dirección guardada</ion-label>
         </ion-item>
+        <div class="entrada">
+          <ion-input
+            disabled
+            minLength="16"
+            type="tel"
+            value="Avenida de las Ciudades, 10"
+          ></ion-input
+          ><ion-icon name="location-outline"></ion-icon>
+        </div>
         <ion-item>
           <ion-radio> </ion-radio>
           <ion-label>Punto de recogida</ion-label>
