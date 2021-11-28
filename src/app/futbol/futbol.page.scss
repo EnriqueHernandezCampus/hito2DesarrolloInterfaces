@@ -1,7 +1,6 @@
 #filtro ion-buttons ion-button ion-icon {
   size: large;
 }
-
 #filtro {
   display: flex;
   flex-direction: row;
@@ -18,7 +17,6 @@ p {
   font-size: 11px;
   margin: 0;
 }
-
 #container {
   display: grid;
   width: 100%;
@@ -26,7 +24,6 @@ p {
   grid-template-rows: repeat(6, 200px);
   height: 1250px;
 }
-
 ion-card img {
   height: 110px;
 }
@@ -41,7 +38,6 @@ ion-chip {
   position: fixed;
   top: 92%;
 }
-
 ion-chip:hover {
   font-size: x-large;
   --background: #f3c19d;

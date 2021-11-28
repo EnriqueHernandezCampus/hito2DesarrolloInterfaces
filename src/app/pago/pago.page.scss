@@ -7,7 +7,6 @@ ion-label{
 }
 ion-item, ion-input{
    font-size: small;
-
 }
 ion-card-title{
     font-size: x-large;
@@ -16,8 +15,6 @@ ion-card-title{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    
-
 }
 #entrada-padre2{
     display: flex;
@@ -36,9 +33,7 @@ ion-card-title{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items:stretch;
-  
-    
+    align-items:stretch; 
 }
 #politica ion-card-content ion-label{
     font-size: xx-small;
